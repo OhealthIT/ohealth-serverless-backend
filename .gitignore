@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+
+#builds
+.build
+.webpack/
+
+#coverage
+coverage
+
+#secrets
+secrets.yml

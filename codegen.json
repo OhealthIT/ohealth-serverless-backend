@@ -1,0 +1,14 @@
+{
+  "overwrite": true,
+  "schema": {
+    "${GRAPHQL_URI}": {
+      "headers": {
+        "x-hasura-admin-secret": "${HASURA_SECRET}"
+      }
+    }
+  },
+  "documents": "graphql/**/*.ts",
+  "generates": {
+    "graphql/generated/graphql.ts": { "plugins": ["typescript", "typescript-operations", "typescript-graphql-request"] }
+  }
+}
